@@ -40,7 +40,7 @@ const Navbar = () => {
                 setauth(false)
             }
         }).catch(( err) => {
-            toast(error.message, {
+            toast(err.message, {
                 type: 'error',
                 position: 'top-right',
                 autoClose: 2000
